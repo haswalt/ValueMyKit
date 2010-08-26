@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>Value My Kit</title>
+    <meta charset=utf-8>
+    <link rel=stylesheet href=css/main.min.css />
+  </head>
+  <body>
+    <h1>Value My Kit</h1>
+    <ul id=t>
+      <li class=a>Kit</li>
+      <li>Condition</li>
+      <li class=l>Estimate</li>
+    </ul>
+    <div id=w>
+      <div id=we>
+        <h2>How much is your old junk worth?</h2>
+        <h3>Value My Kit will estimate the optimum price of your item.</h3>
+        <p>Loading...</p>
+        <form>
+          <label>Product Name or Keywords</label>
+          <input type=text name=q placeholder="e.g. xbox 360 elite required">
+          <label>Product Type</label>
+          <select name=c>
+            <option value=Blended>All</option>
+            <option value=Books>Book</option>
+            <option value=DVD>DVD</option>
+            <option value=Electronics>Electronics</option>
+            <option value=Music>Music</option>
+            <option value=PCHardware>PC Hardware</option>
+            <option value=Software>Software</option>
+            <option value=Toys>Toys</option>
+            <option value=VideoGames>Video</option>
+            <option value=Books>Video Games</option>
+          </select>
+          <button type=submit>Find My Kit</button>
+          <div style=clear:both></div>
+        </form>
+      </div>
+      <div id=p>Loading;...</div>
+      <div id=c>
+        <h2>Tell us about the condition of your item</h2>
+        <p>Please use the slider below to set the condition of your item.</p>
+        <form>
+          <div style=clear:both></div>
+          <input type=range value=4 min=0 max=8 step=1>
+          <p>My item is:</p>
+          <div class=o>Used</div>
+          <button type=submit>Get My Estimate</button>
+          <div style=clear:both></div>
+        </form>
+      </div>
+      <div id=e>Loading&hellip;</div>
+    </div>
+    <div id=f>By <a href=http://lqdinternet.com/ target=_blank>LQD Internet</a></div>
+    <div id=al></div>
+    <script src=http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js></script>
+    <script src=js/app.min.js></script>
+    <script>
+      $().ready(function() {
+        vmk.init();
+      });
+    </script>
+  </body>
+</html>
