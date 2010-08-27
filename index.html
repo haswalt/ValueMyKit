@@ -19,10 +19,9 @@
         <p>Loading...</p>
         <form>
           <label>Product Name or Keywords</label>
-          <input type=text name=q placeholder="e.g. xbox 360 elite required">
+          <input type=text name=q placeholder='e.g. "xbox 360" or "harry potter"'>
           <label>Product Type</label>
           <select name=c>
-            <option value=Blended>All</option>
             <option value=Books>Book</option>
             <option value=DVD>DVD</option>
             <option value=Electronics>Electronics</option>
@@ -32,25 +31,34 @@
             <option value=Toys>Toys</option>
             <option value=VideoGames>Video</option>
             <option value=Books>Video Games</option>
+            <option value=Blended>All</option>
           </select>
           <button type=submit>Find My Kit</button>
           <div style=clear:both></div>
         </form>
       </div>
-      <div id=p>Loading;...</div>
+      <div id=p>Loading...</div>
       <div id=c>
         <h2>Tell us about the condition of your item</h2>
-        <p>Please use the slider below to set the condition of your item.</p>
+        <p>Please use the options below to tell us the condition of your item.</p>
         <form>
           <div style=clear:both></div>
-          <input type=range value=4 min=0 max=8 step=1>
-          <p>My item is:</p>
-          <div class=o>Used</div>
+          <select name="c">
+            <option>For Parts Not Working</option>
+            <option>Acceptable</option>
+            <option>Good</option>
+            <option>Very Good</option>
+            <option selected>Used</option>
+            <option>Seller Refurbished</option>
+            <option>Manufacturer Refurbished</option>
+            <option>New With Defects</option>
+            <option>New</option>
+          </select>
           <button type=submit>Get My Estimate</button>
           <div style=clear:both></div>
         </form>
       </div>
-      <div id=e>Loading&hellip;</div>
+      <div id=e>Loading...</div>
     </div>
     <div id=f>By <a href=http://lqdinternet.com/ target=_blank>LQD Internet</a></div>
     <div id=al></div>
