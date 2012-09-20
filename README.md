@@ -1,0 +1,4 @@
+ValueMyKit
+==========
+
+Simple price estimator
